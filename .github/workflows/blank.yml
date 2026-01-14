@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Build Step
-      run: echo "This is build step"
+      run: echo "This is push trigger step"
       
  # test:
  #   runs-on: ubuntu-latest
