@@ -1,11 +1,19 @@
 name: Hello World
-on: push #workflow_dispatch
+on: 
+    push:
+      branches:
+        -main
+        -develop
+        -release/**
+    pull_request:
+      branches:
+        - main
 jobs: 
   build:
     runs-on: ubuntu-latest
     steps:
     - name: Build Step
-      run: echo "This is push trigger step"
+      run: echo "This is pull trigger step"
       
  # test:
  #   runs-on: ubuntu-latest
